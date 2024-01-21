@@ -32,7 +32,9 @@ int partition(int *array, int low, int high, size_t size)
 	array[i] = array[high];
 	array[high] = temp;
 	if (array[i] != array[high])
+	{
 		print_array(array, size);
+	}
 	return (i);
 }
 
